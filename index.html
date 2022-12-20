@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IP CREATIVE</title>
+    <!-- Plugin -->
     <link rel="stylesheet" href="scss/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!--  -->
   </head>
   <body>
+    <!-- Navigasi -->
     <header>
       <div class="head d-flex justify-content-center">
         <img src="img/logo.jpg" alt="Logo" srcset="" class="rounded-circle" width="50" height="50" />
@@ -49,20 +54,29 @@
         </div>
       </div>
     </nav>
+    <!-- Close Navigasi -->
     <div class="container">
+      <!-- Jumbotron -->
       <div id="jumbotron" class="jumbotron">
         <h2>What's New</h2>
         <section class="splide" aria-labelledby="carousel-heading">
           <div class="splide__slider">
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide" data-splide-interval="5000" style="background-image: url(img/andri-klopfenstein-I0oPzzc6KT8-unsplash.jpg)"></li>
-                <li class="splide__slide" data-splide-interval="5000" style="background-image: url(img/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg); background-size: cover; position: relative; background-repeat: no-repeat"></li>
+                <li class="splide__slide" data-splide-interval="5000" style="background-image: url(img/andri-klopfenstein-I0oPzzc6KT8-unsplash.jpg)">
+                  <div data-aos="fade-down" data-aos-duration="5000">
+                    <h3>Card title</h3>
+                  </div>
+                </li>
+                <li class="splide__slide" data-splide-interval="5000" style="background-image: url(img/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg)"></li>
               </ul>
             </div>
           </div>
         </section>
       </div>
+      <!-- Close Jumbotron -->
+
+      <!-- recomended -->
       <div class="recomended">
         <h2>Recomended For You</h2>
         <div class="row row-cols-1 row-cols-2 g-4 m-auto">
@@ -70,7 +84,7 @@
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <a href=""><img src="img/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" class="img-fluid rounded" alt="..." /></a>
+                  <a href=""><img loading="lazy" src="img/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" class="img-fluid rounded" alt="..." /></a>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -88,7 +102,7 @@
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <a href=""><img src="img/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" class="img-fluid rounded" alt="..." /></a>
+                  <a href=""><img loading="lazy" src="img/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" class="img-fluid rounded" alt="..." /></a>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -106,14 +120,14 @@
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <a href=""><img src="img/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" class="img-fluid rounded" alt="..." /></a>
+                  <a href=""><img loading="lazy" src="img/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" class="img-fluid rounded" alt="..." /></a>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
                     <a href=""><h3 class="card-title">Card title</h3></a>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text">
-                      <small class="text-muted"><i class="bi bi-clock"></i>&nbsp;20 Desember 2022</small>
+                      <small class="text-muted"><i class="bi bi-clock lozad"></i>&nbsp;20 Desember 2022</small>
                     </p>
                   </div>
                 </div>
@@ -124,7 +138,7 @@
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <a href=""><img src="img/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" class="img-fluid rounded" alt="..." /></a>
+                  <a href=""><img loading="lazy" src="img/2.jpg" class="img-fluid rounded" alt="..." /></a>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -142,7 +156,7 @@
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <a href=""><img src="img/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" class="img-fluid rounded" alt="..." /></a>
+                  <a href=""><img loading="lazy" src="img/3.jpg" class="img-fluid rounded" alt="..." /></a>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -158,11 +172,13 @@
           </div>
         </div>
       </div>
+      <!-- Close Recomended -->
     </div>
 
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       var splide = new Splide(".splide", {
         arrows: false,
@@ -194,21 +210,9 @@
         }
       });
     </script>
-    <!-- <script>
-      window.onscroll = function () {
-        scrollFunction();
-      };
-      var logo = document.getElementById("logo");
-      var search = document.getElementById("search");
-      function scrollFunction() {
-        if (document.body.scrollTop > 122 || document.documentElement.scrollTop > 122) {
-          logo.classList.remove("d-none");
-          search.classList.remove("d-none");
-        } else {
-          logo.classList.add("d-none");
-          search.classList.add("d-none");
-        }
-      }
-    </script> -->
+    <script>
+      AOS.init();
+      startEvent: "DOMContentLoaded";
+    </script>
   </body>
 </html>
