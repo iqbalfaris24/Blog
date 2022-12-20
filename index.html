@@ -22,7 +22,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <a id="logo" class="navbar-brand d-lg-flex d-sm-none" href="#">
+          <a id="logo" class="navbar-brand d-none" href="#">
             <img src="img/logo.jpg" alt="IP" class="rounded-circle" width="45" height="45" />
           </a>
           <ul class="navbar-nav">
@@ -183,14 +183,14 @@
       window.addEventListener("scroll", () => {
         const currentScroll = window.pageYOffset;
 
-        if (currentScroll >= 98) {
-          logo.classList.add("d-lg-flex");
-          search.classList.remove("d-lg-none");
-          nav.classList.add("sticky-top");
-        } else {
+        if (currentScroll <= 98) {
           logo.classList.remove("d-lg-flex");
           search.classList.add("d-lg-none");
           nav.classList.remove("sticky-top");
+        } else {
+          logo.classList.add("d-lg-flex");
+          search.classList.remove("d-lg-none");
+          nav.classList.add("sticky-top");
         }
       });
     </script>
