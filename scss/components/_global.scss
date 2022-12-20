@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Josefin+Sans&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     background-color: #525D7A;
+}
+
+textarea:hover,
+input:hover,
+select:hover,
+textarea:active,
+input:active,
+select:active,
+textarea:focus,
+input:focus,
+select:focus,
+label:focus {
+     color: white;
+     background-color: transparent !important;
+     box-shadow: none !important;
+     outline: 0px !important;
+
+}
+
+
+.card {
+     background: transparent;
+     border: none;
+     color: white;
+}
+
+a {
+     text-decoration: none;
+     color: #ffffff;
+
+     &:hover {
+          color: #5865df;
+     }
+}
+
+.bg-nav {
+     background-color: #2F3754;
+}
+
+.nav-item {
+     .nav-link {
+          font-family: 'Josefin Sans', sans-serif;
+          color: white;
+          font-size: 24px;
+          margin: 0px 23px;
+     }
+}
+
+.form-control {
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 25px;
+     color: white !important;
+     background: transparent;
+     border-style: none;
+     border-bottom: 2px solid white;
+     border-radius: 0px;
+}
+
+.btn {
+     border: none;
+     font-size: 25px;
+
+     &:hover {
+          background-color: transparent;
+          color: #92BEFE;
+     }
+}
+
+@include media-breakpoint-up(md) {
+     h1 {
+          font-family: 'Chivo Mono', monospace;
+          margin-left: 20px;
+          font-size: 36px;
+          color: white;
+     }
+
+     h2 {
+          display: inline-flex;
+          font-family: 'Josefin Sans', sans-serif;
+          color: white;
+          font-size: 29px;
+          margin: 26px 0px;
+          border-bottom: 2px solid white;
+     }
+
+     h3 {
+          display: inline-flex;
+          font-family: 'Josefin Sans', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 24px;
+     }
+
+     .text-muted {
+          font-family: 'Josefin Sans', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #ecebeb;
+     }
+
+     .head {
+          margin: 20px 0px;
+     }
+
+     .splide__slide {
+          width: 1140px;
+          height: 540px;
+          cursor: grab;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+     }
+}
+
+@include media-breakpoint-down(md) {
+     h1 {
+          font-family: 'Chivo Mono', monospace;
+          margin-left: 20px;
+          font-size: 36px;
+          color: white;
+     }
+
+     h2 {
+          display: inline-flex;
+          font-family: 'Josefin Sans', sans-serif;
+          color: white;
+          font-size: 29px;
+          margin: 26px 0px;
+          border-bottom: 2px solid white;
+     }
+
+     h3 {
+          display: inline-flex;
+          font-family: 'Josefin Sans', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 24px;
+     }
+
+     .text-muted {
+          font-family: 'Josefin Sans', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #ecebeb;
+     }
+
+     .head {
+          margin: 20px 0px;
+     }
+
+     .splide__slide {
+          width: 570px;
+          height: 270px;
+          cursor: grab;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+     }
+}
