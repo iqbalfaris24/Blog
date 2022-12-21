@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Josefin+Sans&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 
-html {
-     scroll-behavior: smooth;
-}
 
 body {
      background-color: #525D7A;
@@ -23,23 +20,19 @@ label:focus {
      background-color: transparent !important;
      box-shadow: none !important;
      outline: 0px !important;
-
-}
-
-
-.card {
-     background: transparent;
-     border: none;
-     color: white;
 }
 
 a {
      text-decoration: none;
      color: #ffffff;
+}
 
-     &:hover {
-          color: #5865df;
-     }
+.text-muted {
+     font-family: 'Josefin Sans', sans-serif;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     color: #2a2a2a !important;
 }
 
 .bg-nav {
@@ -75,6 +68,58 @@ a {
      }
 }
 
+.splide__slide {
+     cursor: grab;
+     width: 1140px;
+     height: 540px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+.card {
+     background: transparent;
+     border: none;
+     color: white;
+}
+
+.sosmed {
+     text-align: center;
+     border: 1px solid white;
+
+     p {
+          color: white;
+     }
+
+     i {
+          font-size: 30px;
+          margin: 0px 10px;
+          color: white;
+     }
+}
+
+.instagram:hover {
+     background-color: #4267B2;
+}
+
+.tiktok:hover {
+     background-color: #00f2ea;
+     color: white;
+}
+
+.twitter:hover {
+     background-color: #1DA1F2;
+     color: white;
+}
+
+.writter {
+     color: #1DA1F2;
+
+     &:hover {
+          color: white;
+     }
+}
+
 @include media-breakpoint-up(md) {
      h1 {
           font-family: 'Chivo Mono', monospace;
@@ -100,28 +145,26 @@ a {
           font-weight: 400;
           font-size: 24px;
           line-height: 24px;
+
+          &:hover {
+               color: #1DA1F2;
+          }
      }
 
-     .text-muted {
+     h4 {
+          display: inline-flex;
           font-family: 'Josefin Sans', sans-serif;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          color: #ecebeb;
+          color: white;
+          border-bottom: 2px solid white;
+          margin-bottom: 20px;
      }
+
 
      .head {
           margin: 20px 0px;
      }
 
-     .splide__slide {
-          width: 1140px;
-          height: 540px;
-          cursor: grab;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-     }
+
 }
 
 @include media-breakpoint-down(md) {

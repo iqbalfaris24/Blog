@@ -10937,10 +10937,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #525D7A;
 }
@@ -10961,18 +10957,17 @@ label:focus {
   outline: 0px !important;
 }
 
-.card {
-  background: transparent;
-  border: none;
-  color: white;
-}
-
 a {
   text-decoration: none;
   color: #ffffff;
 }
-a:hover {
-  color: #5865df;
+
+.text-muted {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2a2a2a !important;
 }
 
 .bg-nav {
@@ -11005,6 +11000,56 @@ a:hover {
   color: #92BEFE;
 }
 
+.splide__slide {
+  cursor: -webkit-grab;
+  cursor: grab;
+  width: 1140px;
+  height: 540px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.sosmed {
+  text-align: center;
+  border: 1px solid white;
+}
+.sosmed p {
+  color: white;
+}
+.sosmed i {
+  font-size: 30px;
+  margin: 0px 10px;
+  color: white;
+}
+
+.instagram:hover {
+  background-color: #4267B2;
+}
+
+.tiktok:hover {
+  background-color: #00f2ea;
+  color: white;
+}
+
+.twitter:hover {
+  background-color: #1DA1F2;
+  color: white;
+}
+
+.writter {
+  color: #1DA1F2;
+}
+.writter:hover {
+  color: white;
+}
+
 @media (min-width: 768px) {
   h1, .h1 {
     font-family: "Chivo Mono", monospace;
@@ -11029,24 +11074,18 @@ a:hover {
     font-size: 24px;
     line-height: 24px;
   }
-  .text-muted {
+  h3:hover, .h3:hover {
+    color: #1DA1F2;
+  }
+  h4, .h4 {
+    display: inline-flex;
     font-family: "Josefin Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #ecebeb;
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
   }
   .head {
     margin: 20px 0px;
-  }
-  .splide__slide {
-    width: 1140px;
-    height: 540px;
-    cursor: -webkit-grab;
-    cursor: grab;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 @media (max-width: 767.98px) {
